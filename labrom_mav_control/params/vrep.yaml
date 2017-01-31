@@ -1,0 +1,37 @@
+use_tf: false
+loop_rate: 20
+mass: 1.2
+
+# Velocity controller gains
+velocity/x/kp: 1.5
+# velocity/x/ki: 0.01
+velocity/x/ki: 0
+velocity/x/kd: 0.5
+velocity/x/anti_windup: 0.25
+
+velocity/y/kp: 1.5
+# velocity/y/ki: 0.01
+velocity/y/ki: 0.00
+velocity/y/kd: 0.5
+velocity/y/anti_windup: 0.25
+
+velocity/z/kp: 1.5 
+velocity/z/ki: 0.0
+velocity/z/kd: 0.05 
+velocity/z/anti_windup: 5.0
+
+# Position controller gains 
+pose/x/kp: 0.9
+pose/x/ki: 0.01
+pose/x/kd: 1
+pose/x/anti_windup: 0.5
+
+pose/y/kp: 0.9
+pose/y/ki: 0.01
+pose/y/kd: 1
+pose/y/anti_windup: 0.5
+
+pose/z/kp: 10
+pose/z/ki: 2
+pose/z/kd: 5
+pose/z/anti_windup: 2.0
